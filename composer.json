@@ -1,0 +1,21 @@
+{
+    "require": {
+        "slim/slim": "^4.11",
+        "slim/psr7": "^1.6",
+        "league/plates": "^3.5",
+        "php-di/php-di": "^7.0"
+    },
+    "autoload":{
+        "psr-4":{
+            "app\\": "app"
+        },
+        "files": [
+            "app/helpers/config.php",
+            "app/helpers/redirect.php",
+            "app/helpers/flash.php",
+            "app/helpers/auth.php",
+            "app/middlewares/logged.php"
+            
+        ]
+    }
+}
